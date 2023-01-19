@@ -1,3 +1,5 @@
+const display=document.querySelector('.valores')
+
 const uno=document.querySelector('#uno');
 const dos=document.querySelector('#dos');
 const tres=document.querySelector('#tres');
@@ -27,42 +29,42 @@ function presion(e){
 }
 
 suma.addEventListener('click',()=>{
-    operador.innerHTML='+'
-    variable=display.textContent
+    display.innerHTML='+'
+    valor1=display.textContent
     display.innerText=''
 })
 
 resta.addEventListener('click',()=>{
-    operador.innerHTML='-'
-    variable=display.textContent
+    display.innerHTML='-'
+    valor1=display.textContent
     display.innerText=''
 })
 
 multi.addEventListener('click',()=>{
-    operador.innerHTML='*'
-    variable=display.textContent
+    display.innerHTML='*'
+    valor1=display.textContent
     display.innerText=''
 })
 
 divi.addEventListener('click',()=>{
-    operador.innerHTML='/'
-    variable=display.textContent
+    display.innerHTML='/'
+    valor1=display.textContent
     display.innerText=''
 })
 
 borrar.addEventListener('click',()=>{
-    operador.innerText='.'
+    valor1.innerText='.'
     display.innerText=' '
 })
 
 igual.addEventListener('click',()=>{
-    if(operador.innerText==='+'){
-        display.innerText=(parseInt(variable)+ parseInt(display.textContent))
-    }else if(operador.innerText==='-'){
-        display.innerText=(parseInt(variable)- parseInt(display.textContent))
-    }else if(operador.innerText==='*'){
-        display.innerText=(parseInt(variable)* parseInt(display.textContent))
-    }else if(operador.innerText==='/'){
-        display.innerText=(parseInt(variable)/ parseInt(display.textContent))
+    if(display.innerText==='+'){
+        display.innerText=(parseInt(valor1)+ parseInt(display.textContent))
+    }else if(display.innerText==='-'){
+        display.innerText=(parseInt(valor1)- parseInt(display.textContent))
+    }else if(display.innerText==='*'){
+        display.innerText=(parseInt(valor1)* parseInt(display.textContent))
+    }else if(display.innerText==='/'){
+        display.innerText=(parseInt(valor1)/ parseInt(display.textContent))let valor2=0;
     }
 })
