@@ -1,0 +1,83 @@
+.container{
+    height: 20rem;
+    width: 15rem;
+    margin: 100px auto;
+    padding: 20px 40px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border: solid 1px white;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.valores{
+    height: 5rem;
+    border: solid 1px white;
+    border-radius: 5px ;
+    position: relative;
+    bottom: 90px;
+    background-color: rgba(27, 133, 165, 0.193);
+    
+}
+
+.btn{
+    width: 26px;
+    height: 23px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(23, 174, 194, 0.732);
+    box-shadow: 1px 1px 1px black;
+}
+
+body{
+    background: url(https://static.vecteezy.com/system/resources/previews/002/296/625/non_2x/calculator-on-a-blue-background-photo.jpg)  center center fixed ;
+    background-repeat:no-repeat ;
+    background-size: cover;
+}
+
+.izquierdo{
+    position: absolute;
+    left: 44%;
+}
+
+.derecho{
+    width: 2px;
+    height: 2px;
+    border: none;
+    border-radius: 5px;
+   position: absolute;
+    right: 49%; 
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    grid-column-gap: 20px;
+}
+.derecha{
+    width: 49px;
+    height: 23px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(81, 165, 199);
+    box-shadow: 1px 1px 1px black;
+
+}
+
+.derecha_borrar{
+    width: 49px;
+    height: 23px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(199, 81, 81);
+}
+
+@media(max-width:780px) {
+    .izquierdo{
+        position: absolute;
+        left: 35%;
+      
+    }
+}
