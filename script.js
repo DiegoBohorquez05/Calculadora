@@ -65,6 +65,6 @@ igual.addEventListener('click',()=>{
     }else if(display.innerText==='*'){
         display.innerText=(parseInt(valor1)* parseInt(display.textContent))
     }else if(display.innerText==='/'){
-        display.innerText=(parseInt(valor1)/ parseInt(display.textContent))let valor2=0;
+        display.innerText=(parseInt(valor1)/ parseInt(display.textContent))
     }
 })
