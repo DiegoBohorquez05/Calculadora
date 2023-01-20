@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <!-- aqui va a salir el resultado de la operacion y los numeros -->
-        <div  class="pantalla"></div>
-        <div class="resultado">
-            <input type="number" class="valores" id="valor">
+      <!-- aqui va a salir el resultado de la operacion y los numeros -->
+      <button class="derecha" id="mas">+</button>
+      <button class="derecha" id="menos">-</button>
+      <button class="derecha" id="dividir">%</button>
+      <button class="derecha" id="multiplicar">x</button>
+      <button class="derecha" id="igual">=</button>
+      <button class="derecha_borrar" id="borrar">borrar</button> -->
+      <div class="pantalla"></div>
+      <div class="resultado">
+        <input type="number" class="valores" id="valor" />
+      </div>
+      <div class="botones">
+        <div class="izquierdo">
+          <button value="1" class="btn" id="num1">1</button>
+          <button value="2" class="btn" id="num2">2</button>
+          <button value="3" class="btn" id="num3">3</button><br /><br />
+          <button value="4" class="btn" id="num4">4</button>
+          <button value="5" class="btn" id="num5">5</button>
+          <button value="6" class="btn" id="num6">6</button><br /><br />
+          <button value="7" class="btn" id="num7">7</button>
+          <button value="8" class="btn" id="num8">8</button>
+          <button value="9" class="btn" id="num9">9</button><br /><br />
+          <button value="0" class="btn" id="num0">0</button>
         </div>
-        <div class="botones">
-            
-            <div class="izquierdo">
-            <button value="1" class="btn" id="num1">1</button>
-            <button value="2" class="btn" id="num2">2</button>
-            <button value="3" class="btn" id="num3">3</button><br><br>
-            <button value="4" class="btn" id="num4">4</button>
-            <button value="5" class="btn" id="num5">5</button>
-            <button value="6" class="btn" id="num6">6</button><br><br>
-            <button value="7" class="btn" id="num7">7</button>
-            <button value="8" class="btn" id="num8">8</button>
-            <button value="9" class="btn" id="num9">9</button><br><br>
-            <button value="0" class="btn" id="num0">0</button>
+        <div class="derecho">
+          <button class="derecha" id="suma">+</button>
+          <button class="derecha" id="resta">-</button>
+          <button class="derecha" id="division">%</button>
+          <button class="derecha" id="multiplicar">*</button>
+          <button class="derecha" id="igual">=</button>
+          <button class="derecha_borrar" id="borrar">borrar</button>
         </div>
-            <div class="derecho">
-            <button class="derecha" id="suma">+</button>
-            <button class="derecha" id="resta">-</button>
-            <button class="derecha" id="division">%</button>
-            <button class="derecha" id="multiplicar">*</button>
-            <button class="derecha" id="igual">=</button>
-            <button class="derecha_borrar" id="borrar">borrar</button>
-        </div>
-        </div>
+      </div>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
