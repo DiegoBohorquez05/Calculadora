@@ -5,5 +5,27 @@
 }
 .container{
     border: solid;
+    width: 1830px;
+    height: 950px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container__cuadros{
+    border: solid 1px;
+    width: 600px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.cuadro{
     width: 200px;
+    height: 200px;
+    border: solid 1px;
+}
+.juagador1{
+    border: solid;
+    width: 200px;
+    height: 300px;
 }
