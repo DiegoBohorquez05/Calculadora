@@ -66,22 +66,26 @@
         background-color: blue;
     }
 }
-.btn button{
+.btn {
     margin:auto;
     height:50px;
     width:100px;
     background-color:red;
 }
+btn button{
+    
+}
 .e1{
     margin:auto;
     height:50px;
-    width:100px;
+    width:100%;
     background-color:rgba(255, 102, 0, 0.925);
 }
+
 .e2{
     margin:auto;
     height:50px;
-    width:100px;
+    width:100%;
     background-color:rgb(0, 195, 255);
 }
 
