@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,500&display=swap');
+
 .container{
     height: 20rem;
     width: 15rem;
@@ -21,7 +23,8 @@
     position: relative;
     bottom: 90px;
     background-color: rgba(27, 133, 165, 0.193);
-    
+    width: 200px;
+    font-family: 'Rubik', sans-serif;
 }
 
 .btn{

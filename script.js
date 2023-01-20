@@ -8,7 +8,7 @@ const igual=document.querySelector('#igual');
 const borrar=document.querySelector('#borrar');
 
 let valor1=document.querySelector('#valor1');
-let btns = document.querySelectorAll('.btns');
+let btns = document.querySelectorAll('.btn');
 
 let operador=0
 
