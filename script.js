@@ -8,7 +8,9 @@ const igual=document.querySelector('#igual');
 const borrar=document.querySelector('#borrar');
 
 let valor1=document.querySelector('#valor1');
-let btns = document.querySelectorAll('.btns')
+let btns = document.querySelectorAll('.btns');
+
+let operador=0
 
 btns.forEach(el => {
     console.log(el);
@@ -21,38 +23,43 @@ function presion(e){
 }
 
  suma.addEventListener('click',()=>{
-     display.innerHTML='+'
      valor1=display.textContent
      display.innerText=''
+     operador='+'
  })
  resta.addEventListener('click',()=>{
-     display.innerHTML='-'
      valor1=display.textContent
      display.innerText=''
+     operador='-'
  })
  multiplicacion.addEventListener('click',()=>{
-     display.innerHTML='*'
      valor1=display.textContent
      display.innerText=''
+     operador='*'
  })
  division.addEventListener('click',()=>{
-     display.innerHTML='/'
      valor1=display.textContent
      display.innerText=''
+     operador='/'
  })
  borrar.addEventListener('click',()=>{
-     valor1.innerText='.'
      display.innerText=' '
+     console.log('borrar')
  })
- borrar.addEventListener('click',()=>{
-     if(display.innerText==='+'){
-        display.innerText=(parseInt(valor1)+ parseInt(display.innerHTML))
-        console.log('1')
-     }else if(display.innerText==='-'){
-         display.innerText=(parseInt(valor1)- parseInt(display.innerHTML))
-     }else if(display.innerText==='*'){
-         display.innerText=(parseInt(valor1)* parseInt(display.innerHTML))
-     }else if(display.innerText==='/'){
-         display.innerText=(parseInt(valor1)/ parseInt(display.innerHTML))
+
+ igual.addEventListener('click',()=>{
+     if(operador==='+'){
+        display.innerText=(parseInt(valor1)+ parseInt(display.innerText))
+     }else if(operador==='-'){
+         display.innerText=(parseInt(valor1)- parseInt(display.innerText))
+     }else if(operador==='*'){
+         display.innerText=(parseInt(valor1)* parseInt(display.innerText))
+     }else if(operador==='/'){
+        if(parseInt(display.innerText)===0){
+            alert('No se pueden hacer divisiones por 0')
+            display.innerText=' '
+        }else{
+            display.innerText(parseInt(valor1)/ parseInt(display.innerText))
+        }
      }
  })
