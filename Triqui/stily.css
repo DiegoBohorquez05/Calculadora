@@ -26,6 +26,7 @@ body{
     gap: 150px;
 }
 .container__cuadros{
+    margin-top:-80px;
     width: 600px;
     height: 600px;
     display: grid;
